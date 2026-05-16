@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exemplo de hover</title>
+
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        div > .d01 {
+            display: none;
+        }
+
+        div:hover {
+            color: red;
+        }
+
+        div:hover > .d01 {
+            display: block;
+            color: white;
+            background-color: red;
+        }
+
+        .d1 {
+            background-color: lightgray;
+        }
+
+        .d1 > .d2 {
+            display: none;
+            background-color: beige;
+            width: 200px;
+        }
+
+        .d1:hover > .d2 {
+            display: block;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h1>Exemplo de hover</h1>
+    <p>Passe o mouse sobre o texto abaixo</p>
+
+    <div>
+        Passe o mouse aqui
+        <p class="d01">CÓDIGO ESCONDIDO...</p>
+    </div>
+
+    <div class="d1">
+        Teste
+        <p class="d2">Oi</p>
+    </div>
+
+</body>
+</html>

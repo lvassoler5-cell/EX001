@@ -1,0 +1,39 @@
+@charset "UTF-8";
+
+* {
+    font-family: Arial, Helvetica, sans-serif;
+    /*height: 100%;*/
+}
+
+body {
+    background: linear-gradient(180deg, #F1D8C9, #F2C3A7);
+}
+
+main {
+    background-color: white;
+    border-radius: 20px; /*Arredonda os cantos*/
+    width: 450px; /*Tamanhodo "quadro"*/
+    padding: 10px;
+    /*
+    1° parâmetro: Quanto a sombra andará para o lado, 
+    2° parâmetro: Quanto a sombra andará para baixo, 
+    3° parâmetro: Quanto a sombra irá espalhar, 
+    4° (último) parâmetro: Quanto de transparência a sombra terá*/
+    box-shadow: 5px 5px 15px rgba(136, 109, 93, 0.616); /*RGBA é diferente de RGB, se torna RGBA quando você mexe na transparência por meio do quadro de cores*/
+    margin: auto /*centraliza*/;
+}
+
+h1 {
+    color: #F39209;
+    text-align: center;
+    text-shadow: 1px 1px 0px #885206ba;
+}
+
+h2 {
+    color: #125189;
+}
+
+p {
+    text-align: justify;
+}
+

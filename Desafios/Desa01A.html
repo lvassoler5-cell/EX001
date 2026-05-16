@@ -1,0 +1,456 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+
+       @charset "UTF-8";
+
+        body{
+            margin-top: 0;
+            margin-right: 0;
+            margin-bottom: 0;
+            margin-left: 0;
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: #ebe8ca;
+        }
+
+        header {
+            background: linear-gradient(180deg, #27aa60, #092615);
+            height: 320px;
+            width: auto;
+            margin-top: auto;
+            margin-bottom: 0;
+            box-shadow: 3px 3px 5px 5px rgba(0, 0, 0, 0.216);
+        }
+
+        header > .principal {
+            text-align: center;
+            color: white;
+            margin-top: 0px;
+            position: relative;
+            top: 55px;
+            font-size: 40px;text-shadow: 2px 2px 1px  rgba(0, 0, 0, 0.296);
+        }
+
+        header > .sub {
+            text-align: center;
+            color: white;
+            position: relative;
+            top: 70px;
+            font-size: 22px;
+            text-shadow: 2px 2px 1px  rgba(0, 0, 0, 0.296);
+        }
+
+        nav > .home {
+            text-align: left;
+            font-family: Arial, Helvetica, sans-serif;
+            position: relative;
+            top: 165px;
+            left: 15px;
+            text-decoration: none;
+            color: #47d484d0;
+            text-shadow: 2px 2px 1px  #02401dd0;
+        }
+
+        nav > .noticias {
+            text-align: left;
+            font-family: Arial, Helvetica, sans-serif;
+            position: relative;
+            top: 165px;
+            left: 30px;
+            text-decoration: none;
+            color: #47d484d0;
+            text-shadow: 2px 2px 1px  #02401dd0;
+        }
+
+        nav > .curiosidades {
+            text-align: left;
+            font-family: Arial, Helvetica, sans-serif;
+            position: relative;
+            top: 165px;
+            left: 45px;
+            text-decoration: none;
+            color: #47d484d0;
+            text-shadow: 2px 2px 1px  #02401dd0;
+        }
+
+        nav > .falar {
+            text-align: left;
+            font-family: Arial, Helvetica, sans-serif;
+            position: relative;
+            top: 165px;
+            left: 60px;
+            text-decoration: none;
+            color: #47d484d0;
+            text-shadow: 2px 2px 1px  #02401dd0;
+        }
+
+        nav > a:hover {
+            color: rgba(9, 89, 44, 0.816);
+            background-color: #27aa60;
+            text-shadow: none;
+            padding: 3px;
+            border-radius: 5px;
+            font-weight: bold;
+
+        }
+
+        main {
+            position: relative;
+            top: -21px;
+            background-color: white;
+            width: 1200px;
+            height: 3400px;
+            margin-left: 160px;
+            box-shadow: 4px 4px 4px 4px rgba(0, 0, 0, 0.09);
+            border-radius: 0px 0px 12px 12px;
+        }
+
+        main > .conteudo {
+            margin-left: 23px;
+            position: relative;
+            top: 23px;
+            color: #073f1f;
+            
+        }
+
+        main > .pp {
+            margin-left: 23px;
+            position: relative;
+            top: 23px;
+            text-align: justify;
+            text-indent: 25px;
+            font-size: 16px;
+            margin-right: 23px;
+            line-height: 2.7;
+        }
+
+        .negrito {
+            color: #176538;
+            line-height: 2.7;
+        }
+
+        .primeiro {
+            background: linear-gradient(90deg, #4ff396, #09261500);
+            position: relative;
+            top: 40px;
+            width: 1145px;
+            height: 26px;
+            left: 24px;
+        }
+
+        .primeiro > .version {
+            font-size: 18px;
+            position: relative;
+            top: 4px;
+            left: 10px;
+            color: #0a5d2e;
+            font-weight: bold;
+            
+        }
+
+        .sp {
+            margin-left: 23px;
+            position: relative;
+            top: 47px;
+            text-align: justify;
+            text-indent: 25px;
+            font-size: 16px;
+            line-height: 2.7;
+            margin-right: 23px;
+        }
+
+        .sp > a {
+            background-color: #50ea93;
+            text-decoration: none;
+            color: #14542f;
+            font-weight: bold;
+            padding: 3px;
+        }
+
+        .img1 {
+            height: 450px;
+            position: relative;
+            width: 1160px;
+            top: 57px;
+            left: 30px;
+        }
+
+        .tp {
+            position: relative;
+            top: 37px;
+            margin-left: 23px;
+            text-indent: 25px;
+            font-size: 16px;
+            line-height: 2.7;
+        }
+
+        .qt {
+            margin-left: 23px;
+            position: relative;
+            top: 47px;
+            text-align: justify;
+            text-indent: 25px;
+            font-size: 16px;
+            line-height: 2.7;
+            margin-right: 23px;
+        }
+
+        .qt > a {
+            background-color: #50ea93;
+            text-decoration: none;
+            color: #14542f;
+            font-weight: bold;
+            padding: 3px;
+        }
+
+        .img2 {
+            position: relative;
+            top: 57px;
+            left: 40px;
+            width: 1120px;
+            height: 360px;
+        }
+
+        .up {
+            margin-left: 23px;
+            position: relative;
+            top: 47px;
+            text-align: justify;
+            text-indent: 25px;
+            font-size: 16px;
+            line-height: 2.7;
+            margin-right: 23px;
+        }
+
+        .img3 {
+            position: relative;
+            top: 58px;
+            left: 330px;
+            height: 270px;
+        }
+
+        .ap {
+            margin-left: 23px;
+            position: relative;
+            top: 69px;
+            text-align: justify;
+            text-indent: 25px;
+            font-size: 16px;
+            line-height: 2.7;
+            margin-right: 23px;
+        }
+        
+        .vid1 {
+            background-color: #092615;
+            position: relative;
+            top: 69px;
+            height: 630px;
+        }
+
+        .vid1 > .vid2 {
+            position: relative;
+            top: 40px;
+            left:75px;
+            width: 1050px;
+            height: 550px;
+        }
+
+        .ask {
+            background-color: #176136;
+            position: relative;
+            
+            height: 45px;
+            border-radius: 12px 12px 0px 0px;
+            width: 1130px;
+        }
+
+        .frase {
+            color: white;
+            font-size: 22px;
+            position: relative;
+            top: -58px;
+            left: 15px;
+            font-weight: bold;
+            
+
+        }
+
+        .outros {
+            background-color: #43cf80;
+            position: relative;
+            width: 1130px;
+            height: 550px;
+            top: 100px;
+            left: 30px;
+            border-radius: 12px;
+            box-shadow: 4px 4px 4px 4px rgba(0, 0, 0, 0.09);
+        } 
+
+        .tip {
+            margin-left: 13px;
+            position: relative;
+            top: -44px;
+            text-align: justify;
+            text-indent: 25px;
+            font-size: 16px;
+            line-height: 2.7;
+            margin-right: 23px;
+        }
+
+        .versoes {
+            margin-left: 15px;
+            position: relative;
+            top: -84px;
+            text-align: justify;
+            text-indent: 25px;
+            font-size: 16px;
+            line-height: 1.6;
+            margin-right: 23px;
+        }
+
+        .versoes > a {
+            color: black;
+            font-size: 17px;
+            font-weight: 550;
+        }
+
+        .versões > a:hover {
+            font-size: 18px;
+            color: #0a5d2e;
+        }
+
+        .versoes2 {
+            margin-left: 605px;
+            position: relative;
+            top: -320px;
+            text-align: justify;
+            text-indent: 25px;
+            font-size: 16px;
+            line-height: 1.6;
+            margin-right: 23px;
+        }
+
+        .versoes2 > a {
+            color: black;
+            font-size: 17px;
+            font-weight: 550;
+        }
+
+        .triste {
+            margin-left: 13px;
+            position: relative;
+            top: -310px;
+            text-align: justify;
+            text-indent: 25px;
+            font-size: 16px;
+            line-height: 2.7;
+            margin-right: 23px;
+        }
+
+        .triste > a {
+            text-decoration: none;
+            color: #14542f;
+            font-weight: bold;
+            padding: 3px;
+        }
+        
+        .assign {
+            color: black;
+            position: relative;
+            top: -87px;
+            left: 180px;
+            font-size: 14px
+        }
+
+    </style>
+</head>
+<body>
+    <header>
+        <h1 class="principal">CURIOSIDADES DE TECNOLOGIA</h1>
+        <h3 class="sub">Tudo aquilo que você sempre quis saber sobre o mundo Tech, em um único lugar</h3>
+
+        <nav>
+            <a class="home" href="#">Home</a>
+            <a class="noticias" href="#">Notícias</a>
+            <a class="curiosidades" href="#">Curiosidades</a>
+            <a class="falar" href="#">Fale Conosco</a>
+        </nav>
+    </header>
+
+
+    <main>
+        <h1 class="conteudo">História do mascote do Android</h1>
+
+        <p class="pp">Provavelmente você sabe que o sistema operacional <Strong class="negrito">Android</Strong>, mantido pelo <strong class="negrito">Google</strong> é um dos mais utilizados para dispositivos móveis em todo o mundo. Mas talvez você não saiba que o seu simpático mascote tem um nome e uma história muito curiosa? Pois acompanhe esse artigo para aprender muita coisa sobre esse robozinho.</p>
+
+        <div class="primeiro">
+            <p class="version"> A PRIMEIRA VERSÃO</p>
+        </div>
+
+        <p class="sp">A primeira tentativa de criar um mascote surgiu em 2007 e veio de um desenvolvedor chamado <a href="#">Dan Morril🔗</a>. Ele conta que abriu o <a href="#">Inkscape🔗</a> (software livre para vetorização de imagens) e criou sua própria versão do robô. O objetivo era apenas personificar o sistema apenas para a sua equipe, não existia nenhuma solicitação da empresa para a criação de um mascote.</p>
+
+        <img class="img1"  src="image2.png" alt="imagem do android">
+
+        <p class="tp">Essa primeira versão bizarra até foi batizada em homenagem ao seu criador. seriam os <strong class="negrito">Dandroids</strong>.</p>
+
+        <div class="primeiro">
+            <p class="version"> SURGE UM NOVO MASCOTE</p>
+        </div>
+
+        <p class="qt">A ideia de ter um mascote foi amadurecendo e a missão foi passada para uma profissional da área. A ilustradora  <a href="#">Irina Blok🔗</a>, também funcionária do Google, ficou com a missão de representar o pequeno robô de uma maneira mais agradável</p>
+
+        <img class="img2"  src="image1.png" alt="imagem do android">
+        
+        <p class="up">A ideia principal de Irina era representar tudo graficamente com poucos traços e de forma mais chapada. O desenho também deveria gerar identificação rápida com quem o olha. Surgiu então o <strong class="negrito">Bugdroid</strong>, o novo mascote do Android.</p>
+
+        <img class="img3"  src="image.png" alt="imagem do android">
+
+        <p class="ap">A principal inspiração para os traços do novo <strong class="negrito">Bugdoid</strong> veio daqueles bonequinhos que ilustram portas de banheiro para indicar o gênero de cada porta. Conta a lenda que a artista estava criando em sua mesa no escritório do <strong class="negrito">Google</strong> e olhou para o lado dos banheiros e a identificaçãofoi imediata: simples, limpo, objetivo.</p>
+
+        <div class="vid1">
+            <iframe class="vid2" width="560" height="315" src="https://www.youtube.com/embed/l2UDgpLz20M?si=gG_YZfHanlpPtROL" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        </div>
+
+        <div class="outros">
+            <h2 class="ask"></h2>
+                <p class="frase">Quer aprender mais?</p>
+            <p class="tip">Outo assunto curioso em relação ao Android é que cada versão sempre foi nomeada em homenagem a um doce, em ordem alfabética a partir da versão 1.5 até a 9.0.</p>
+            
+            <p class="versoes">
+               <a href="#"><br>✓ 1.5 - Cupcake</a>
+               <a href="#"><br>✓ 1.6 - Donut</a>
+               <a href="#"><br>✓ 3.0 - Eclair</a>
+               <a href="#"><br>✓ 2.2 - Froyo</a>
+               <a href="#"><br>✓ 2.3 - gingerbread</a>
+               <a href="#"><br>✓ 3.0 - Honeycomb</a>
+               <a href="#"><br>✓ 4.0 - Ice Cream Sandwich</a>
+            </p>
+
+            <p class="versoes2">
+               <a href="#"><br>✓ 4.1 - JellyBean</a>
+               <a href="#"><br>✓ 4.4 - KitKat</a>
+               <a href="#"><br>✓ 5.0 - Lolipop</a>
+               <a href="#"><br>✓ 6.0 - Marshmallow</a>
+               <a href="#"><br>✓ 7.0 - Nougat</a>
+               <a href="#"><br>✓ 8.0 - Oreo</a>
+               <a href="#"><br>✓ 9.0 - Pie</a>
+            </p>
+
+            <p class="triste">Infelizmente, o <strong class="negrito">Android Q</strong> não existiu, pois o Google resolveu pôr fim a essa divertida prática e começou a usar numerações, o que deu origem ao <strong class="negrito">Android 10</strong>.</p>
+
+            <p class="triste">Acesse aqui o site <a href="#">Android History🔗</a>para conhecer a sequência das versões "adocicadas" e o que cada um trouxe para o sistema Android.</p>
+        </div>
+    </main>
+
+
+    <footer>
+        <p class="assign">Made by Lucas F. Vassoler/ first project.
+            <br>Online Founder.
+        </p>
+    </footer>
+</body>
+</html>

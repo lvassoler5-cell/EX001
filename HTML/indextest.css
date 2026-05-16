@@ -1,0 +1,20 @@
+@charset "UTF-8"; /*Existem várias regras, são representandas com @ e essa em específico é caso você utilize acentuações no HTML5*/
+
+body {
+    background-color: rgb(254, 248, 210);
+    font-family: arial;
+}
+
+h1 {
+    color: darkred;
+    background-color: goldenrod;
+    border-radius: 8px;
+}
+
+h2 {
+    color: darkred;
+}
+
+p {
+    text-align: justify;
+}

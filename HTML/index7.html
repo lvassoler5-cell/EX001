@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Outras formatações</title>
+</head>
+<body>
+    <h1>Outras formatações</h1>
+    <h2>Código-fonte</h2>
+    <p>O comando <code>document.getElementById('teste')</code> é escrito em linguagem JavaScript
+    <br> porém as letras ficam muito apertadas, para separar, utilize a Tag <mark><strong>Code</strong></mark>
+    Muito bom para escrever códigos
+    </p>
+
+    <!-- A Tag Pre considera todos os espaços que tem no código e leva direto para a página -->
+    <pre>
+        <code>
+    num = int(input('Digite um número'))
+    if num % 2 == 0:
+        print(f'O número {num} é PAR)
+    else:
+        print(f'O número {num} é IMPAR)
+    print('Fim do programa')
+        </code>
+    </pre>
+
+    <h2>Citações</h2>
+    <p>Como diria o pai de um amigo: <q>o computador é um burro muito rápido</q></p>
+    <!-- A Tag q significa quote, ou seja, citação, usar essa Tag ao invés de Aspas manuais em citações -->
+
+    <h2>Citações completas</h2>
+    <p>Segundo Jeff Noble, no seu livro HTML para Leigos:</p>
+    <blockquote>
+        A diferença entre elementos inline e um bloco de texto é importante. Os elementos <mark>HTML</mark> neste capítulo descrevem os blocos de texto.
+    </blockquote> <!--Vai aparecer deslocada horizontalmente-->
+
+    <h2>Abreviações</h2>
+    <p>Estou estudando <abbr title="HyperText Markup Langague">HTML</abbr> e <abbr title="Cascading Style Sheets">CSS</abbr>. Estou adorando!</p>
+    
+    <h2>Texto invertido</h2>
+    <p><bdo dir="rtl">Estou aprendendo a criar coisas em HTML.</bdo></p>
+</body>
+</html>

@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gradiente em CSS</title>
+    <style>
+        * { /*Configurações globais da css*/
+            height: 100%;
+        }
+        body {
+            background: linear-gradient(90deg, black 25%, blue 65%, white 45%);
+            /*background: radial-gradient(circle, black, blue, white);*/
+            background-attachment: fixed; /*Faz o degradê não bugar e cobrir toda a tela*/
+        }
+
+        h1 {
+            color: white;
+        }
+        /* Ele exige que seja background-IMAGE para colocar gradiente */
+        /* No gradiente precisa indicar (a direção, quantas cores você quer colocar) */
+
+    </style>
+</head>
+<body>
+    <h1>Testando gradientes</h1>
+</body>
+</html>

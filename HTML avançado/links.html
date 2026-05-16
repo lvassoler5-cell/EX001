@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Link</title>
+
+    <style>
+
+    @import url('https://fonts.googleapis.com/css2?family=Sen:wght@400..800&display=swap');
+
+        body {
+            background-color: darkgray;
+        }
+        a {
+            color: darkred;
+            text-decoration: none;
+            font-weight: bold;
+            font-family: sans-serif;
+        }
+
+        a:visited { /*Pseudo-classe*/
+            color: red;
+        }
+
+        a:hover { /*Pseudo-classe*/
+            text-decoration: underline;
+            color: darkred;
+            text-shadow: 10px 10px 10px rgb(0, 4, 255);
+        }
+
+        a:active { /*Pseudo-classe*/
+            color: darkred;
+        }
+
+        /*Pseudo-classes utilizam :*/
+        /*Pseudo-elementos utilizam ::*/
+
+        .especial {
+            background-color: rgb(24, 3, 81);
+        }
+
+        .especial::after {
+            content: ' [link]';
+            text-decoration: none;
+            font-weight: normal;
+            color: darkgray;
+        }
+
+        .especial::before {
+            content: '[test] ';
+            text-decoration: none;
+            font-weight: normal;
+            color: darkgray;
+        }
+
+        .indicacao {
+            background-color: #3C0000;
+            width: 34px;
+            height: 34px;
+            border: 1.5px solid #ffff;
+            border-radius: 1.5px;
+        }
+
+        .indicacao > .idade {
+            color: #ffff;
+            text-align: center;
+            margin-top: 6px;
+            font-family: "Sen", sans-serif;
+            font-weight: 500;
+            font-size: 19px;
+        }
+
+        .indicacao:hover {
+            width: 40px;
+            height: 40px;
+        }
+
+        .indicacao:hover > .idade {
+            color: #ffff;
+            text-align: center;
+            margin-top: 7px;
+            font-family: "Sen", sans-serif;
+            font-weight: 500;
+            font-size: 23px;
+        }
+        
+
+
+    </style>
+</head>
+<body>
+    <h1>Personalizando Links</h1>
+    <ul>
+        <li><a href="https://gustavoguanabara.github.io">Repositório GitHub</a></li>
+        <li><a href="https://youtube.com/cursoemvideo/">Canal do youtube</a></li>
+        <li><a class="especial" href="https://google.com">Aba oficial do Google</a></li>
+    </ul>
+
+    <div class="indicacao">
+        <p class="idade">16</p>
+    </div>
+</body>
+</html>

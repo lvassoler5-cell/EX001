@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pseudo-classes</title>
+    <style>
+        div {
+            display: inline-block; /*Tudo na mesma linha*/
+            background-color: lightgray;
+            text-align: center;
+            border: 1px solid rgb(0, 0, 0);
+            width: 200px; /*Largura*/
+            height: 200px;
+        }
+
+        /*Pseudo-classes são representadas com : (Ex.: div:hover{}. Pseudo-classes estão relacionadas ao estado do elemento
+        hover significa que acontece algo quando passar o mouse por cima*/
+
+        div:hover {
+            width: 220px;
+            height: 220px;
+            background-color: azure;
+            color: rgb(1, 26, 246);
+        }
+    </style>
+</head>
+<body>
+    <div id="d1">01</div>
+    <div id="d2">02</div>
+    <div id="d3">03</div>
+</body>
+</html>

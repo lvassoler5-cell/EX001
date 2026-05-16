@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Efeitos sonoros</title>
+</head>
+<body>
+    <h1>Reprodução de Áudio</h1>
+    <p>Vamos aprender a reproduzir áudios em HTML5.</p>
+    <audio src="Midia/universfield-computer-mouse-click-352734.mp3" controls></audio> <!--Aparece os controles para iniciar a música-->
+    <!-- O navegador é compatível com MP3, WAV, OGG -->
+
+    <audio preload="metadata" autoplay controls loop> <!--Vai carregar os arquivos de cima para baixo, se 1 não for, carrega o próximo até ir-->
+        <source src="Midia/universfield-computer-mouse-click-352734.mp3" type="audio/mpeg">
+        <source src="Midia/universfield-computer-mouse-click-352734.ogg" type="audio/ogg">
+        <source src="Midia/universfield-computer-mouse-click-352734.wav" type="audio/wav">
+        <p>Infelizmente seu navegador não consegue reproduzir áudio <a href="Midia/universfield-computer-mouse-click-352734.mp3">Clique aqui para baixar o arquivo MP3</a></p>
+    </audio>
+</body>
+</html>

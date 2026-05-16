@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <style>
+        .box {
+            background-color: transparent;
+            border: 1.5px solid rgb(255, 255, 255);
+            width: 600px;
+            height: 925px;
+            border-radius: 45px 0px 45px 45px;
+            position: relative;
+            left: 1300px;
+            overflow: hidden
+        }
+
+        .box::before {
+            content: "";
+            position: fixed;
+            inset: 0;
+            background: linear-gradient(
+                120deg,
+                rgba(45, 93, 161, 0.6),
+                rgba(10, 93, 46, 0.4),
+                transparent
+            );
+            filter: blur(80px);
+            transform: scale(1.2);
+            z-index: -1;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="box"></div>
+    <img class="bi" src="back.png" alt="background-image">
+</body>
+</html>

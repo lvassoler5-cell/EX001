@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grouping Tags</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: dimgray;
+            margin: 0px;
+        }
+
+        header {
+            background-color: white;
+            padding: 10px;
+            margin: 10px;
+        }
+
+        main {
+            background-color: white;
+            padding: 10px;
+            margin: 10px;
+            border-radius: 8px 20px 8px 20px;
+        }
+
+        nav {
+            background-color: rgb(102, 102, 102);
+            padding: 3px;
+            box-shadow: 1px 1px 4px 2px rgba(0, 0, 0, 0.505);
+            /*X offset, Y offset, Blur, Spread*/
+        }
+        
+
+        nav > a {
+            text-decoration: none;
+            color: white;
+            font-weight: bold;
+            margin-right: 23px;
+            text-shadow: 2px 2px 4px 2px rgba(0, 0, 0, 0.189);
+        }
+
+        nav > a:hover {
+            text-decoration: underline;
+        }
+
+        article > aside {
+            background-color: rgb(165, 165, 165)
+        }
+
+        article {
+            background-color: lightgray;
+            padding: 5px;
+        }
+
+        footer {
+            background-color: black;
+            color: white;
+            text-align: center;
+            padding: 1px;
+            margin: 0px; /*sem margem*/
+        }
+    </style>
+</head>
+<body>
+    <!-- Header e main são como divs, mas o navegador consegue valores mais complexos com eles -->
+    <header>
+        <h1>Meu site</h1>
+        
+        <nav>
+            <a href="#">Link</a>
+            <a href="#">Link</a>
+            <a href="#">Link</a>
+            <a href="#">Link</a>
+            <a href="#">Link</a>
+        </nav>
+    </header>
+
+    <main>
+        <section id="assuntos">
+
+        </section>
+        
+        <section id="noticias">
+            <article>
+                <h2>Notícia sobre o Brasil</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ea obcaecati eum hic itaque voluptatibus quae numquam voluptatem laboriosam earum nihil accusamus consequatur quidem odit optio eos possimus, perspiciatis modi repellendus.</p>
+                <aside>
+                    <p>Artigo escrito por L.F.V</p>
+                </aside>
+            </article>
+            <article>
+                <aside>
+
+                </aside>
+            </article>
+        </section>
+    </main>
+
+    <footer>
+        Desenvolvido por Online
+    </footer> <!--Rodapé-->
+</body>
+</html>

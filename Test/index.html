@@ -5,38 +5,26 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Login</title>
     <style>
-        .box {
-            background-color: transparent;
-            border: 1.5px solid rgb(255, 255, 255);
-            width: 600px;
-            height: 925px;
-            border-radius: 45px 0px 45px 45px;
+
+        body{
+            background-color: black;
+        }
+
+        .fp {
+            width: 141px;
+            height: 141px;
+            background-image: url("https://images.unsplash.com/photo-1500648767791-00dcc994a43e");
+            background-size: cover;
+            background-position: center;
             position: relative;
-            left: 1300px;
-            overflow: hidden
+            top: 250px;
+            margin: auto;
+            border-radius: 23px;
+            border: 2px solid white;
         }
-
-        .box::before {
-            content: "";
-            position: fixed;
-            inset: 0;
-            background: linear-gradient(
-                120deg,
-                rgba(45, 93, 161, 0.6),
-                rgba(10, 93, 46, 0.4),
-                transparent
-            );
-            filter: blur(80px);
-            transform: scale(1.2);
-            z-index: -1;
-        }
-
     </style>
 </head>
 <body>
-    <div class="box"></div>
-    <img class="bi" src="back.png" alt="background-image">
-
-    <h1>Esse é um teste de commit</h1>
+    <div class="fp"></div>
 </body>
 </html>

@@ -3,30 +3,40 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Posicionamento</title>
+    <title>Fundo fixo de tela</title>
     <style>
         body {
             height: 100vh;
-            background-color: black;
+            /* background-color: black;
             background-image: url('imagens/wallpaper002.jpg');
             background-position: center top;
-            background-repeat: repeat-y;
+            background-repeat: no-repeat;
             background-size: cover;
 
-            /*Por padrão, o background-size é auto
+            background-attachment: fixed; */
 
-            Contain mantém a proporção da imagem e a ajusta para caber dentro do contêiner, mas pode não ficar bom, pois pode deixar espaços em branco
+            /*Temos dois tipos, o scroll, que é o modo padrão, e o fixed, que deixa a imagem estática enquanto a pessoa rola para baixo*/
 
-            Cover ajusta a imagem para cobrir todo o contêiner, cortando partes da imagem se necessário */
+            /*Shorthand - background
+            color > image > position > repeat > size > attachment */
+
+            background: black url('imagens/wallpaper002.jpg') center center no-repeat fixed;
+            background-size: cover;
+
+            /*Size não é aplicavel na shorthand*/
         }
 
         main {
             background-color: white;
-            width: 400px;
+            max-width: 400px;
             padding: 10px;
             margin: auto;
             border: 1px solid darkblue;
             border-radius: 15px;
+        }
+
+        ::-webkit-scrollbar {
+            width: 0px;
         }
     </style>
 </head>
